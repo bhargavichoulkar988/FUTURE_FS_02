@@ -9,7 +9,7 @@ services:
       - key: NODE_ENV
         value: production
       - key: CLIENT_ORIGIN
-        value: https://bhargavi2005.github.io
+        value: https://bhargavichoulkar988.github.io
       - key: MONGO_URI
         value: mongodb+srv://bhargavi:bhargavi111@cluster0.z7ptqcz.mongodb.net/mini-crm?retryWrites=true&w=majority&appName=Cluster0
       - key: JWT_SECRET

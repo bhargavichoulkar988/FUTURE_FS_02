@@ -3,7 +3,7 @@
 // In local dev the proxy in package.json forwards /api → localhost:5000
 const BASE =
   process.env.NODE_ENV === 'production'
-    ? 'https://future-fs-2-3flb.onrender.com/api'
+    ? 'https://mini-crm-backend.onrender.com/api'
     : '/api';
 
 const TIMEOUT_MS = 20000; // 20 seconds — Render free tier cold start can take ~15s

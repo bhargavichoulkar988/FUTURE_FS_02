@@ -11,7 +11,7 @@ const app = express();
 // Allow GitHub Pages + localhost in dev. Add more origins via CLIENT_ORIGIN env var.
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://bhargavi2005.github.io',
+  'https://bhargavichoulkar988.github.io',
   ...(process.env.CLIENT_ORIGIN ? [process.env.CLIENT_ORIGIN] : []),
 ];
 
