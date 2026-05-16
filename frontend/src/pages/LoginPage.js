@@ -14,7 +14,7 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (loading) {
-      slowTimer.current = setTimeout(() => setSlowMsg(true), 3000);
+      slowTimer.current = setTimeout(() => setSlowMsg(true), 8000);
     } else {
       clearTimeout(slowTimer.current);
       setSlowMsg(false);
@@ -85,7 +85,7 @@ export default function LoginPage() {
 
           {error   && <div className="alert alert-error">{error}</div>}
           {slowMsg && !error && (
-            <div className="alert alert-info">⏳ Server is waking up (free tier) — please wait…</div>
+            <div className="alert alert-info">⏳ Server is starting up — this takes up to 30 seconds on first load. Please wait…</div>
           )}
 
           <form onSubmit={submit} className="login-form">

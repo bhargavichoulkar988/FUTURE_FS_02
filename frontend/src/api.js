@@ -6,7 +6,7 @@ const BASE =
     ? 'https://future-fs-2-3flb.onrender.com/api'
     : '/api';
 
-const TIMEOUT_MS = 20000; // 20 seconds — Render free tier cold start can take ~15s
+const TIMEOUT_MS = 60000; // 60 seconds — Render free tier cold start can take 30-50s
 
 function getToken() {
   return localStorage.getItem('crm_token');

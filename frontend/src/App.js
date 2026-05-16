@@ -29,7 +29,7 @@ export default function App() {
     const timeout = setTimeout(() => {
       localStorage.removeItem('crm_token');
       setLoading(false);
-    }, 15000); // 15s max wait on startup
+    }, 60000); // 60s max wait on startup
 
     getMe()
       .then(({ user }) => setUser(user))
