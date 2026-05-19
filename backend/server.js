@@ -29,6 +29,18 @@ app.use(cors({
 
 app.use(express.json());
 
+// ── Keep-alive ping (prevents Render free tier from sleeping) ─────────────────
+if (process.env.NODE_ENV === 'production') {
+  const SELF_URL = process.env.RENDER_EXTERNAL_URL || '';
+  if (SELF_URL) {
+    setInterval(() => {
+      fetch(`${SELF_URL}/api/health`)
+        .then(() => console.log('Keep-alive ping sent'))
+        .catch(() => console.log('Keep-alive ping failed'));
+    }, 14 * 60 * 1000); // every 14 minutes
+  }
+}
+
 // ── Routes ────────────────────────────────────────────────────────────────────
 app.use('/api/auth',    require('./routes/auth'));
 app.use('/api/leads',   require('./routes/leads'));

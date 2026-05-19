@@ -8,6 +8,8 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: RENDER_EXTERNAL_URL
+        value: https://future-fs-02-vrvh.onrender.com
       - key: CLIENT_ORIGIN
         value: https://bhargavichoulkar988.github.io
       - key: MONGO_URI

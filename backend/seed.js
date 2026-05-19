@@ -14,8 +14,6 @@ const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/mini-crm';
 const SAMPLE_LEADS = [
   { name: 'Alice Johnson',  email: 'alice@example.com',  phone: '+1 555 100 0001', company: 'TechCorp',    source: 'website',      status: 'new',       message: 'Interested in your enterprise plan.' },
   { name: 'Bob Martinez',   email: 'bob@example.com',    phone: '+1 555 100 0002', company: 'StartupXYZ',  source: 'referral',     status: 'contacted', message: 'Referred by Alice.' },
-  { name: 'Rajesh Bhargavi', email: 'rajesh.bhargavi@example.com', phone: '+91 98765 43210', company: 'Bhargavi Solutions', source: 'referral', status: 'qualified', message: 'Interested in CRM automation services.' },
-  { name: 'Rajesh Bhargavi', email: 'rajesh.bhargavi2@example.com', phone: '+91 98765 43211', company: 'Bhargavi Enterprises', source: 'email', status: 'contacted', message: 'Requested a proposal for lead tracking.' },
   { name: 'Carol White',    email: 'carol@example.com',  phone: '+1 555 100 0003', company: 'DesignHub',   source: 'social_media', status: 'qualified', message: 'Saw our Instagram post.' },
   { name: 'David Lee',      email: 'david@example.com',  phone: '+1 555 100 0004', company: 'FinanceInc',  source: 'email',        status: 'converted', message: 'Ready to sign contract.' },
   { name: 'Eva Brown',      email: 'eva@example.com',    phone: '+1 555 100 0005', company: '',            source: 'website',      status: 'lost',      message: 'Budget constraints.' },
